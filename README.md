@@ -10,7 +10,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 ### vue + vite 项目自动部署搭建步骤
 
 #### 1. 安装依赖
- - `yarn add child_process babel-node  babel-core babel-preset-es2015 babel-preset-env babel-cli`
+ - `yarn add child_process babel-node  babel-core babel-preset-es2015 babel-preset-env babel-cli scp2`
 #### 2. 创建  .babelrc 文件
 ```
 {

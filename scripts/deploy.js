@@ -8,6 +8,7 @@ export const deploy = async function (env = 'dev') {
   let opt = JSON.parse(JSON.stringify(deployConfig[env].scpOpt))  
   await scp(opt) 
   console.log(`------------ ${ env } deploy success----------------`) 
+  console.log(`------------ ${ env } back up start----------------`)
   // 先部署后备份
   opt.path = opt.path + '-version/' + getVersion()
   await scp(opt)
