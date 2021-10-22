@@ -1,0 +1,25 @@
+{
+  "name": "vue-app-vite",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "deploy": "babel-node ./scripts/build.js",
+    "dev-build-deploy": "babel-node ./scripts/build.js && babel-node ./scripts/deploy.js dev",
+    "pro-build-deploy": "babel-node ./scripts/build.js && babel-node ./scripts/deploy.js pro"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-node": "^0.0.1-security",
+    "babel-preset-env": "^1.7.0",
+    "child_process": "^1.0.2",
+    "scp2": "^0.5.0",
+    "vue": "^3.2.16"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "vite": "^2.6.4"
+  }
+}
